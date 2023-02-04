@@ -1025,13 +1025,24 @@ body {
   padding-bottom: 104px;
 }
 
-  .features-list {
-     width: calc((100%-30px) / 2);
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  /* gap: 72px; */
+}
+
+  .features-item  {
+     width: calc((100% - 30px) / 2);
   }
 
   .team-list {
-    /* width: calc((100%-30px) / 2); */
-      gap: 24px;
-      row-gap: 64px;
+ display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
   }
+
+.team-item {
+  width: calc((100%-30px) / 2);
 }
+
