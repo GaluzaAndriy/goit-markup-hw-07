@@ -1,81 +1,79 @@
 @media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
 
-    .container {
-        width: 1158px;
-      }
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 
-      .section {
-        padding-top: 120px;
-        padding-bottom: 120px;
-      }
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
 
-      .features-list {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 24px;
-       
-      }
-      
-      .features-title {
-        font-size: 20px;
-        line-height: 1.2;
-        font-weight: 500;
-        }
-      
-        .features-item  {
-           width: calc((100% - 72px) / 4);
-        }
+  .features-title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+  }
 
-    .features-item::before {
-  content: "";
-  display: block;
-  height: 112px;
-  background: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
-  background-size: 64px 64px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  .features-item {
+    width: calc((100% - 72px) / 4);
+  }
 
-.antenna::before {
-  background-image: url(../images/antenna.svg);
-}
+  .features-item::before {
+    content: "";
+    display: block;
+    height: 112px;
+    background: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.clock::before {
-  background-image: url(../images/clock.svg);
-}
+  .antenna::before {
+    background-image: url(../images/antenna.svg);
+  }
 
-.diagram::before {
-  background-image: url(../images/diagram.svg);
-}
+  .clock::before {
+    background-image: url(../images/clock.svg);
+  }
 
-.astronaut::before {
-  background-image: url(../images/astronaut.svg);
-}
+  .diagram::before {
+    background-image: url(../images/diagram.svg);
+  }
 
+  .astronaut::before {
+    background-image: url(../images/astronaut.svg);
+  }
 
+  .examples.section {
+    padding-top: 0px;
+  }
 
-      .team-list {
-        display: flex;
-         flex-wrap: wrap;
-         column-gap: 24px;
-        }
-       
-       .team-item {
-         width: calc((100% - 72px) / 4);
-       }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
 
-      .customers-list {
-        display: flex;
-          flex-wrap: wrap;
-          column-gap: 24px;
-        
-      }
-      
-      .customers-item {
-        width: calc((100% - 120px) / 6);
-        height: 88px;
-      }
+  .team-item {
+    width: calc((100% - 72px) / 4);
+  }
 
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+  }
 }

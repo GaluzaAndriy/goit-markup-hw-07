@@ -188,9 +188,15 @@ body {
 
 /*------------- HERO------------------------*/
 
+.container-hero {
+padding-left: 0px;
+padding-right: 0px;
+}
+
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -207,12 +213,12 @@ body {
 .hero-title {
   margin-left: auto;
   margin-right: auto;
-  width: 496px;
-  height: 120px;
-  margin-bottom: 48px;
+  width: 319px;
+  height: 80px;
+  margin-bottom: 72px;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: var(--main-letter-spacing);
   color: var(--first-white-color);
 }
@@ -251,7 +257,7 @@ body {
 }
 /*------------- FEATURES------------------------*/
 .features {
-    /* display: flex;
+  /* display: flex;
   flex-wrap: wrap; */
   /* column-gap: 30px; */
   /* gap: 72px; */
@@ -315,8 +321,14 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
- }
+}
 /*------------- EXAMPLES------------------------*/
+@media screen and (max-width: 1199px) {
+  .examples {
+    display: none;
+  }
+}
+
 .examples {
   text-align: center;
   padding-top: 0;
@@ -443,9 +455,9 @@ body {
 
 .customers-list {
   display: flex;
-    flex-wrap: wrap;
-    column-gap: 16px;
-   row-gap: 72px;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 72px;
 }
 
 .customers-item {
@@ -569,7 +581,6 @@ body {
   display: flex;
 }
 
-
 .subscribe-fild {
   display: flex;
   align-items: center;
@@ -617,7 +628,8 @@ body {
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
   outline: none;
-  transition: border-color var(--main-transition), background-color var(--main-transition);
+  transition: border-color var(--main-transition),
+    background-color var(--main-transition);
 }
 
 /* не зрозумів по мекету чи потрібен тут ховер і фокус */
@@ -1014,5 +1026,3 @@ body {
   background-color:  red;
 } */
 /* --------------MEDIA------------------- */
-
-
