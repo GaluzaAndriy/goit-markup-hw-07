@@ -343,13 +343,10 @@ body {
 
 /*------------- TEAM------------------------*/
 
-.section.team {
-  padding-bottom: 128px;
-}
-
 .team {
   background-color: var(--first-background-color);
   background-color: #f4f4fd;
+  padding-bottom: 128px;
 }
 
 .team-title {
