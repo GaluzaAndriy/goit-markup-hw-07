@@ -136,11 +136,6 @@ body {
   }
 }
 
-/* .header-list {
-  display: none;
-  gap: 0;
-} */
-
 .header-link {
   padding-top: 24px;
   padding-right: 20px;
@@ -156,12 +151,17 @@ body {
   transition: color var(--main-transition);
 }
 
+.header-link.current {
+  color: #404bbf;
+}
+
 .header-link.current::after {
   content: "";
   position: absolute;
   width: calc(100% - 40px);
   height: 4px;
   background-color: #404bbf;
+  color: #404bbf;
   left: 20px;
   bottom: -4px;
   border-radius: 2px;
@@ -180,15 +180,9 @@ body {
   .header-contacts {
     display: none;
     margin-right: 0;
-  gap: 40px;
+    gap: 40px;
   }
 }
-
-/* .header-contacts {
-  display: none;
-  margin-right: 0;
-  gap: 40px;
-} */
 
 .header-mail {
   padding-top: 24px;
@@ -217,11 +211,6 @@ body {
 .header-tel:focus {
   color: var(--active-color);
 }
-/* .container-mob-menu {
-   padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-} */
 
 .container-mob-menu {
   height: 100%;
@@ -258,22 +247,10 @@ body {
   margin-bottom: 16px;
 }
 
-/* .mob-menu-list {
-
-} */
-
 .mob-menu-item {
   margin-bottom: 40px;
 }
 
-/* .mob-menu-item:not(:last-child) {
-  
-}
-
-.current {
-}
-.mob-menur-link {
-} */
 .mob-menu-link {
   font-weight: 700;
   font-size: 36px;
@@ -282,9 +259,6 @@ body {
   text-transform: capitalize;
   color: #2e2f42;
 }
-
-/* .mob-menu-contacts {
-} */
 
 .mob-menu-contacts-mail {
   margin-top: 40px;
@@ -310,7 +284,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 48px;
-  
+
   /* margin-bottom: 48px; */
 }
 .mob-soc-item {
@@ -409,55 +383,12 @@ body {
   border-radius: 4px;
 }
 /*------------- FEATURES------------------------*/
-/* .features {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 30px;
-  gap: 72px;
-} */
+
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  /* column-gap: 30px; */
-  gap: 72px;
+   gap: 72px;
 }
-
-/* .features-item {
-  width: 100%;
-  width: calc((100% - 72px) / 4);
-} */
-
-/* .features-item::before {
-  content: "";
-  display: block;
-  height: 112px;
-  background: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
-  background-size: 64px 64px;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
-/* ці іконки додані не з спрайту для того щоб попрактикуватися 
-з before , лектора окремо запитували чи так можна, і він сказав що так
-усі інші в оптимізованому спрайті */
-
-/* .antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.astronaut::before {
-  background-image: url(../images/astronaut.svg);
-} */
 
 .features-title {
   font-weight: 700;
@@ -475,7 +406,9 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 /*------------- EXAMPLES------------------------*/
+
 @media screen and (max-width: 1199px) {
   .examples {
     display: none;
@@ -501,8 +434,6 @@ body {
 
 .examples-list {
   display: flex;
-  flex-wrap: wrap;
-  /* column-gap: 24px; */
   gap: 24px;
 }
 
@@ -527,11 +458,9 @@ body {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  /* column-gap: 24px; */
   gap: 72px;
   background-color: #f4f4fd;
-  /* text-align: center; */
-  justify-content: center;
+   justify-content: center;
 }
 
 .team-item {
@@ -602,7 +531,6 @@ body {
   letter-spacing: var(--main-letter-spacing);
   text-transform: capitalize;
   color: var(--title-color);
-  /* margin-top: 10px; */
   margin-bottom: 72px;
 }
 
@@ -649,8 +577,7 @@ body {
   padding-top: 96px;
   padding-bottom: 96px;
   background-color: var(--title-color);
-  /* display: flex; */
-}
+ }
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -683,21 +610,16 @@ body {
   color: var(--active-color);
 }
 
-/* .footer-contacts {
-  display: flex;
-} */
-
 .footer-first-colum {
   width: 100%;
-  /* margin-right: 120px; */
-}
+ }
 
 .media {
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
   margin-bottom: 16px;
-   line-height: 1.5;
+  line-height: 1.5;
   letter-spacing: var(--main-letter-spacing);
   color: var(--first-white-color);
 }
@@ -714,7 +636,7 @@ line-height: 24px;
 }
 
 .footer-soc {
-margin-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .footer-soc-list {
@@ -755,15 +677,15 @@ margin-bottom: 72px;
 }
 
 .subscribe {
- display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .subscribe-form {
   display: flex;
   flex-wrap: wrap;
-   align-items: center;
+  align-items: center;
   justify-content: center;
 }
 
@@ -782,10 +704,6 @@ justify-content: center;
   color: var(--first-white-color);
 }
 
-/* .subscribe-text {
-  background-color: transparent;
-} */
-
 .subscribe-email::placeholder {
   font-size: 12px;
   line-height: 2;
@@ -801,13 +719,11 @@ justify-content: center;
 .subscribe-input {
   width: 100%;
   height: 40px;
-  /* padding-left: 16px; */
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
   font-size: 12px;
-  /* margin-right: 24px; */
   line-height: 2;
   display: flex;
   align-items: center;
@@ -816,7 +732,7 @@ justify-content: center;
   outline: none;
   transition: border-color var(--main-transition),
     background-color var(--main-transition);
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 /* не зрозумів по мекету чи потрібен тут ховер і фокус */
@@ -864,8 +780,7 @@ justify-content: center;
 .subscribe-button:focus {
   color: var(--first-white-color);
   background-color: #404bbf;
-  /* border: 1px solid #404bbf; */
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -970,8 +885,7 @@ justify-content: center;
 }
 
 .services-item:hover {
-  /* border: 0.5px solid #f4f4fd; */
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .services-title {
@@ -1021,9 +935,6 @@ justify-content: center;
 }
 
 .modal-close {
-  /* position: absolute;
-  top: 24px;
-  right: 24px; */
   fill: #000000;
   width: 24px;
   min-height: 24px;
@@ -1106,8 +1017,6 @@ justify-content: center;
   width: 100%;
   height: 120px;
   padding: 8px 16px;
-  /* padding-top:  8px;
-  padding-left: 16px; */
   background: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1193,7 +1102,6 @@ justify-content: center;
 .submit-button:focus {
   color: var(--first-white-color);
   background-color: #404bbf;
-  /* border: 1px solid #404bbf; */
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }

@@ -8,6 +8,21 @@
     padding-bottom: 120px;
   }
 
+  .header-contacts {
+    display: flex;
+    margin-right: 0;
+    gap: 40px;
+  }
+
+  .header-tel,
+  .header-mail {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    olor: #434455;
+  }
+
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
@@ -103,5 +118,32 @@
   .customers-item {
     width: calc((100% - 120px) / 6);
     height: 88px;
+  }
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--title-color);
+    display: flex;
+  }
+
+  .footer-contacts {
+    display: flex;
+  }
+
+  .footer-first-colum {
+    margin-right: 120px;
+  }
+
+  .subscribe-footer {
+    margin-left: 80px;
+  }
+
+  .subscribe-footer {
+    display: block;
+  }
+  .footer-tab {
+    margin-bottom: 0;
+    ;
   }
 }
