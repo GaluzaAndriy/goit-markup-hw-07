@@ -631,10 +631,10 @@ body {
 /* ------------- FOOTER------------------------  */
 
 .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: var(--title-color);
-  display: flex;
+  /* display: flex; */
 }
 
 .footer-logo {
@@ -644,6 +644,7 @@ body {
   line-height: 1.17;
   display: flex;
   align-items: center;
+  justify-content: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
@@ -654,12 +655,16 @@ body {
   color: var(--active-color);
 }
 
-.footer-contacts {
+/* .footer-contacts {
   display: flex;
-}
+} */
 
 .footer-first-colum {
-  margin-right: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* margin-right: 120px; */
 }
 
 .media {
@@ -672,7 +677,10 @@ body {
 }
 
 .footer-text {
-  width: 264px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 268px;
   font-size: var(--main-font-size);
   line-height: 1.5;
   letter-spacing: var(--main-letter-spacing);
@@ -710,10 +718,10 @@ body {
   background-color: rgba(49, 208, 170, 1);
 }
 
-.subscribe-footer {
+/* .subscribe-footer {
   margin-left: 80px;
   display: flex;
-}
+} */
 
 .subscribe-form {
   display: flex;
