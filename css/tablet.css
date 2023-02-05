@@ -148,6 +148,27 @@ margin-right: 24px;
  margin-bottom: 0;
 }
 
+.modal {
+  width: 408px;
+}
+
+.section.portfolio {
+  padding-top: 64px;
+}
+
+.filters-list {
+  justify-content: center;
+  margin-bottom: 64px;
+}
+
+.services-item {
+  width: calc((100% - 24px) / 2);
+}
+
+.services-list {
+  gap: 24px;
+}
+
 /* .subscribe-tab {
   display: flex;
 } */
