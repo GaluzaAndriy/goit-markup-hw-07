@@ -26,7 +26,7 @@
 
   <body class="body">
     <!-- comment header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a href="./index.html" class="heder-logo link"
@@ -56,11 +56,89 @@
             >
           </li>
         </ul>
+         <button type="button" class="menu-open" data-menu-open>
+        <svg class="menu-open-icon" width="32" height="22">
+          <use href="./images/symbol-defs.svg#icon-charm_menu-hamburger"></use>
+        </svg>
+      </button>
       </div>
-    </header> -->
+
+     
+
+      <div class="mob-menu is-hidden " data-menu>
+        <div class="container-mob-menu">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close" data-menu-close>
+              <svg class="menu-close-icon" width="8" height="8">
+                <use href="./images/symbol-defs.svg#icon-Vector"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link link" href="./index.html">Studio</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link link" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-menu-botton">
+            <ul class="mob-menu-contacts list">
+              <li class="mob-menu-contacts-tel">
+                <a class="mob-menu-tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu-contacts-mail">
+                <a class="mob-menu-mail link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">
+                  <svg class="mob-soc-icon" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">
+                  <svg class="mob-soc-icon" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">
+                  <svg class="mob-soc-icon" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">
+                  <svg class="mob-soc-icon" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- comment main -->
     <main class="main">
-       <!-- comment section 0 -->
+      <!-- comment section 0 -->
       <section class="hero">
         <div class="container container-hero">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -305,9 +383,9 @@
           </ul>
         </div>
       </section>
-    </main> 
+    </main>
     <!-- comment section 4 -->
-   <section class="customers section"> 
+    <section class="customers section">
       <div class="container">
         <h2 class="customers-title">Customers</h2>
         <ul class="customers-list list">
@@ -428,9 +506,9 @@
         </div>
       </div>
     </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <!-- is-hidden -->
-      <!-- <div class="modal">
+    <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/symbol-defs.svg#icon-Vector"></use>
@@ -515,7 +593,8 @@
           </div>
         </form>
       </div>
-    </div> --> 
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

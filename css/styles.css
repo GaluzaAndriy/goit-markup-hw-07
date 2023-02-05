@@ -74,6 +74,10 @@ body {
   padding-bottom: 96px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /*------------- HEADER------------------------*/
 .header {
   background-color: var(--first-background-color);
@@ -84,6 +88,8 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .header-navigation {
@@ -111,9 +117,20 @@ body {
 .header-part-logo {
   color: var(--active-color);
 }
+.menu-open {
+  width: 32px;
+  height: 22px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-open-icon {
+  stroke: rgba(46, 47, 66, 1);
+}
 
 .header-list {
-  display: flex;
+  display: none;
   gap: 0;
 }
 
@@ -153,7 +170,7 @@ body {
 }
 
 .header-contacts {
-  display: flex;
+  display: none;
   margin-right: 0;
   gap: 40px;
 }
@@ -185,12 +202,123 @@ body {
 .header-tel:focus {
   color: var(--active-color);
 }
+/* .container-mob-menu {
+   padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+} */
 
+.container-mob-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  color: #2e2f42;
+  z-index: 1;
+  padding: 40px;
+  overflow: auto;
+}
+.menu-close {
+  fill: #000000;
+  width: 24px;
+  min-height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: auto;
+  transition: border-color var(--main-transition), fill var(--main-transition),
+    background-color var(--main-transition);
+  margin-bottom: 16px;
+}
+
+/* .mob-menu-list {
+
+} */
+
+.mob-menu-item {
+  margin-bottom: 40px;
+}
+
+/* .mob-menu-item:not(:last-child) {
+  
+}
+
+.current {
+}
+.mob-menur-link {
+} */
+.mob-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+
+/* .mob-menu-contacts {
+} */
+
+.mob-menu-contacts-mail {
+  margin-top: 40px;
+}
+.mob-menu-mail {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: #434455;
+}
+.mob-menu-contacts-tel {
+  width: 100%;
+}
+.mob-menu-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.11;
+  color: #4d5ae5;
+  text-transform: capitalize;
+}
+.mob-soc-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  /* margin-bottom: 48px; */
+}
+.mob-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.mob-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--main-transition);
+}
+.mob-soc-icon {
+  fill: rgba(244, 244, 253, 1);
+}
 /*------------- HERO------------------------*/
 
 .container-hero {
-padding-left: 0px;
-padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .hero {
@@ -211,12 +339,11 @@ padding-right: 0px;
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx)
- {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero {
-   background-image: var(--background-gradient),
-    url(../images/hero-image-mob-2x.jpg); 
+    background-image: var(--background-gradient),
+      url(../images/hero-image-mob-2x.jpg);
   }
 }
 
@@ -266,12 +393,12 @@ padding-right: 0px;
   border-radius: 4px;
 }
 /*------------- FEATURES------------------------*/
-.features {
-  /* display: flex;
-  flex-wrap: wrap; */
-  /* column-gap: 30px; */
-  /* gap: 72px; */
-}
+/* .features {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  gap: 72px;
+} */
 .features-list {
   display: flex;
   flex-wrap: wrap;
@@ -279,10 +406,10 @@ padding-right: 0px;
   gap: 72px;
 }
 
-.features-item {
-  /* width: 100%; */
-  /* width: calc((100% - 72px) / 4); */
-}
+/* .features-item {
+  width: 100%;
+  width: calc((100% - 72px) / 4);
+} */
 
 /* .features-item::before {
   content: "";
@@ -828,8 +955,8 @@ padding-right: 0px;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 408px;
-  min-height: 576px;
+  width: 392px;
+  min-height: 586px;
   background-color: #fcfcfc;
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
