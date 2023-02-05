@@ -100,4 +100,55 @@ color: #434455;
     width: calc((100% - 234px) / 3);
     height: 88px;
   }
+
+  .footer-tab {
+    display: flex;
+     justify-content: center;
+  margin-bottom: 72px;
+  }
+.footer-contacts{
+  width: 528px;
+}
+
+  .footer-logo {
+    justify-content: left;
+  }
+
+  .footer-logo-text {
+    margin-bottom: 0;
+  }
+
+
+  .footer-soc {
+margin-bottom: 0;
+}
+
+.footer-first-colum {
+  width: 264px;
+  margin-right: 24px;
+  /* margin-right: 120px; */
+}
+
+.footer-media {
+  justify-content: left;
+  margin-bottom: 0;
+}
+
+.subscribe-footer {
+  justify-content: left;
+}
+
+.subscribe {
+  display: block;
+}
+
+.subscribe-input {
+width: 264px;
+margin-right: 24px;
+ margin-bottom: 0;
+}
+
+/* .subscribe-tab {
+  display: flex;
+} */
 }
