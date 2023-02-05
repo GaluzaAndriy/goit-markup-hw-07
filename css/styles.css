@@ -129,10 +129,17 @@ body {
   stroke: rgba(46, 47, 66, 1);
 }
 
-.header-list {
+@media screen and (max-width: 767px) {
+  .header-list {
+    display: none;
+    gap: 0;
+  }
+}
+
+/* .header-list {
   display: none;
   gap: 0;
-}
+} */
 
 .header-link {
   padding-top: 24px;
@@ -169,11 +176,19 @@ body {
   color: var(--active-color);
 }
 
-.header-contacts {
+@media screen and (max-width: 767px) {
+  .header-contacts {
+    display: none;
+    margin-right: 0;
+  gap: 40px;
+  }
+}
+
+/* .header-contacts {
   display: none;
   margin-right: 0;
   gap: 40px;
-}
+} */
 
 .header-mail {
   padding-top: 24px;

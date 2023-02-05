@@ -6,6 +6,28 @@
     padding-top: 96px;
     padding-bottom: 96px;
   }
+
+.mob-menu,
+.menu-open {
+  display: none;
+}
+
+.heder-logo {
+  margin-right: 123px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-tel,
+.header-mail {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.33;
+color: #434455;
+}
+
 .hero {
   padding-bottom: 108px;
    background-image: var(--background-gradient),
