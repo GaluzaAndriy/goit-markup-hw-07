@@ -8,6 +8,21 @@
   }
 .hero {
   padding-bottom: 108px;
+   background-image: var(--background-gradient),
+    url(../images/hero-image-tab.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx)
+ {
+  .hero {
+   background-image: var(--background-gradient),
+    url(../images/hero-image-tab-2x.jpg); 
+  }
 }
 
 .hero-title {

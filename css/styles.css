@@ -203,11 +203,21 @@ padding-right: 0px;
   background-color: var(--title-color);
   text-align: center;
   background-image: var(--background-gradient),
-    url(../images/people-office\ 1.jpg);
+    url(../images/hero-image-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx)
+ {
+  .hero {
+   background-image: var(--background-gradient),
+    url(../images/hero-image-mob-2x.jpg); 
+  }
 }
 
 .hero-title {
