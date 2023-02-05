@@ -9,6 +9,53 @@
         padding-bottom: 120px;
       }
 
+      .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+       
+      }
+      
+      .features-title {
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 500;
+        }
+      
+        .features-item  {
+           width: calc((100% - 72px) / 4);
+        }
+
+    .features-item::before {
+  content: "";
+  display: block;
+  height: 112px;
+  background: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+
+
       .team-list {
         display: flex;
          flex-wrap: wrap;
