@@ -155,6 +155,10 @@ body {
   color: #404bbf;
 }
 
+.mob-menu-link.current {
+  color: #404bbf;
+}
+
 .header-link.current::after {
   content: "";
   position: absolute;
@@ -213,7 +217,7 @@ body {
 }
 
 .container-mob-menu {
-  height: 100%;
+    height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
