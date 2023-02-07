@@ -117,6 +117,7 @@ body {
 .header-part-logo {
   color: var(--active-color);
 }
+
 .menu-open {
   width: 32px;
   height: 22px;
@@ -718,6 +719,7 @@ body {
   outline: none;
   border: none;
   background-color: transparent;
+  padding: 16px;
 }
 
 .subscribe-input {
@@ -737,6 +739,7 @@ body {
   transition: border-color var(--main-transition),
     background-color var(--main-transition);
   margin-bottom: 16px;
+  padding: 16px;
 }
 
 /* не зрозумів по мекету чи потрібен тут ховер і фокус */
@@ -912,6 +915,9 @@ body {
 
 /* -------------------backdrop------------- */
 
+
+
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -926,12 +932,28 @@ body {
   top: 50%;
   left: 50%;
   width: 392px;
-  min-height: 586px;
+  /* min-height: 586px; */
   background-color: #fcfcfc;
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--main-transition);
   padding: 24px;
+  overflow: scroll;
+}
+
+@media screen and (max-width: 392px) {
+  .modal {
+    width: 100vw;
+    /* height: 100vh; */
+
+  }
+}
+
+@media screen and (max-height: 585px) {
+  .modal {
+    /* width: 100vw; */
+    height: 100vh;
+  }
 }
 
 .backdrop.is-hidden .modal {
